@@ -1,6 +1,7 @@
 // DEPENDENCIES GLOBAL //
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 // CONFIG //
 require('dotenv').config();
@@ -16,9 +17,9 @@ app.use('/books', booksController);
 
 // ROUTES //
 app.get('/', (req, res) => {
-    res.send('Welcome to the Books API!')
+    res.send('Fáilte go API Books!📗')
 });
 
 app.listen(PORT, () => {
-    console.log('Greetings! From port: ', PORT);
+    console.log('Beannachtaí! ón gcalafort: ', PORT);
 });
